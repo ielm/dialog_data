@@ -8,7 +8,7 @@ python3 build.py
 #### To write files, uncomment lines 56 and/or 57
 
 ###
-```
+```bibtex
 @misc{li2019endtoend,
 title={End-to-End Trainable Non-Collaborative Dialog System},
 author={Yu Li and Kun Qian and Weiyan Shi and Zhou Yu},
