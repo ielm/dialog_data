@@ -1,0 +1,1997 @@
+[
+  {
+    "turn": 0,
+    "agent": "0",
+    "text": "Hello how are you today?",
+    "tokens": {
+      "hello": {
+        "id": "1",
+        "text": "Hello",
+        "lemma": "hello",
+        "upos": "INTJ",
+        "xpos": "UH",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=5"
+      },
+      "how": {
+        "id": "2",
+        "text": "how",
+        "lemma": "how",
+        "upos": "ADV",
+        "xpos": "WRB",
+        "feats": "PronType=Int",
+        "head": 1,
+        "deprel": "advmod",
+        "misc": "start_char=6|end_char=9"
+      },
+      "be": {
+        "id": "3",
+        "text": "are",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBP",
+        "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+        "head": 2,
+        "deprel": "cop",
+        "misc": "start_char=10|end_char=13"
+      },
+      "you": {
+        "id": "4",
+        "text": "you",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Person=2|PronType=Prs",
+        "head": 5,
+        "deprel": "nsubj",
+        "misc": "start_char=14|end_char=17"
+      },
+      "today": {
+        "id": "5",
+        "text": "today",
+        "lemma": "today",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "obl:tmod",
+        "misc": "start_char=18|end_char=23"
+      },
+      "?": {
+        "id": "6",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=23|end_char=24"
+      }
+    },
+    "intent": "greeting",
+    "semantic_slot": "others",
+    "topics": [
+      "today"
+    ]
+  },
+  {
+    "turn": 1,
+    "agent": "1",
+    "text": "Good How are you",
+    "tokens": {
+      "good": {
+        "id": "1",
+        "text": "Good",
+        "lemma": "good",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=4"
+      },
+      "how": {
+        "id": "1",
+        "text": "How",
+        "lemma": "how",
+        "upos": "ADV",
+        "xpos": "WRB",
+        "feats": "PronType=Int",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=5|end_char=8"
+      },
+      "be": {
+        "id": "2",
+        "text": "are",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBP",
+        "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+        "head": 1,
+        "deprel": "cop",
+        "misc": "start_char=9|end_char=12"
+      },
+      "you": {
+        "id": "3",
+        "text": "you",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Person=2|PronType=Prs",
+        "head": 1,
+        "deprel": "nsubj",
+        "misc": "start_char=13|end_char=16"
+      }
+    },
+    "intent": "greeting",
+    "semantic_slot": "others",
+    "topics": []
+  },
+  {
+    "turn": 2,
+    "agent": "0",
+    "text": "\"Very good, I'm seeing you're having problems with your Amazon order?\"",
+    "tokens": {
+      "very": {
+        "id": "1",
+        "text": "Very",
+        "lemma": "very",
+        "upos": "ADV",
+        "xpos": "RB",
+        "head": 2,
+        "deprel": "advmod",
+        "misc": "start_char=0|end_char=4"
+      },
+      "good": {
+        "id": "2",
+        "text": "good",
+        "lemma": "good",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=5|end_char=9"
+      },
+      ",": {
+        "id": "3",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 2,
+        "deprel": "punct",
+        "misc": "start_char=9|end_char=10"
+      },
+      "I": {
+        "id": "1",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 3,
+        "deprel": "nsubj",
+        "misc": "start_char=11|end_char=12"
+      },
+      "be": {
+        "id": "5",
+        "text": "'re",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBP",
+        "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+        "head": 6,
+        "deprel": "aux",
+        "misc": "start_char=25|end_char=28"
+      },
+      "see": {
+        "id": "3",
+        "text": "seeing",
+        "lemma": "see",
+        "upos": "VERB",
+        "xpos": "VBG",
+        "feats": "Tense=Pres|VerbForm=Part",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=15|end_char=21"
+      },
+      "you": {
+        "id": "9",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 11,
+        "deprel": "nmod:poss",
+        "misc": "start_char=50|end_char=54"
+      },
+      "have": {
+        "id": "6",
+        "text": "having",
+        "lemma": "have",
+        "upos": "VERB",
+        "xpos": "VBG",
+        "feats": "Tense=Pres|VerbForm=Part",
+        "head": 3,
+        "deprel": "ccomp",
+        "misc": "start_char=29|end_char=35"
+      },
+      "problem": {
+        "id": "7",
+        "text": "problems",
+        "lemma": "problem",
+        "upos": "NOUN",
+        "xpos": "NNS",
+        "feats": "Number=Plur",
+        "head": 6,
+        "deprel": "obj",
+        "misc": "start_char=36|end_char=44"
+      },
+      "with": {
+        "id": "8",
+        "text": "with",
+        "lemma": "with",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 11,
+        "deprel": "case",
+        "misc": "start_char=45|end_char=49"
+      },
+      "Amazon": {
+        "id": "10",
+        "text": "Amazon",
+        "lemma": "Amazon",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 11,
+        "deprel": "compound",
+        "misc": "start_char=55|end_char=61"
+      },
+      "order": {
+        "id": "11",
+        "text": "order",
+        "lemma": "order",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 7,
+        "deprel": "nmod",
+        "misc": "start_char=62|end_char=67"
+      },
+      "?": {
+        "id": "12",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 3,
+        "deprel": "punct",
+        "misc": "start_char=67|end_char=68"
+      }
+    },
+    "intent": "yes_no_question",
+    "semantic_slot": "order_detail",
+    "topics": [
+      "I",
+      "be",
+      "see",
+      "problem",
+      "Amazon",
+      "order"
+    ]
+  },
+  {
+    "turn": 3,
+    "agent": "1",
+    "text": "Yes I ordered a heater and it never came",
+    "tokens": {
+      "yes": {
+        "id": "1",
+        "text": "Yes",
+        "lemma": "yes",
+        "upos": "INTJ",
+        "xpos": "UH",
+        "head": 3,
+        "deprel": "discourse",
+        "misc": "start_char=0|end_char=3"
+      },
+      "I": {
+        "id": "2",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 3,
+        "deprel": "nsubj",
+        "misc": "start_char=4|end_char=5"
+      },
+      "order": {
+        "id": "3",
+        "text": "ordered",
+        "lemma": "order",
+        "upos": "VERB",
+        "xpos": "VBD",
+        "feats": "Mood=Ind|Tense=Past|VerbForm=Fin",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=6|end_char=13"
+      },
+      "a": {
+        "id": "4",
+        "text": "a",
+        "lemma": "a",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Ind|PronType=Art",
+        "head": 5,
+        "deprel": "det",
+        "misc": "start_char=14|end_char=15"
+      },
+      "heater": {
+        "id": "5",
+        "text": "heater",
+        "lemma": "heater",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 3,
+        "deprel": "obj",
+        "misc": "start_char=16|end_char=22"
+      },
+      "and": {
+        "id": "6",
+        "text": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "head": 9,
+        "deprel": "cc",
+        "misc": "start_char=23|end_char=26"
+      },
+      "it": {
+        "id": "7",
+        "text": "it",
+        "lemma": "it",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs",
+        "head": 9,
+        "deprel": "nsubj",
+        "misc": "start_char=27|end_char=29"
+      },
+      "never": {
+        "id": "8",
+        "text": "never",
+        "lemma": "never",
+        "upos": "ADV",
+        "xpos": "RB",
+        "head": 9,
+        "deprel": "advmod",
+        "misc": "start_char=30|end_char=35"
+      },
+      "come": {
+        "id": "9",
+        "text": "came",
+        "lemma": "come",
+        "upos": "VERB",
+        "xpos": "VBD",
+        "feats": "Mood=Ind|Tense=Past|VerbForm=Fin",
+        "head": 3,
+        "deprel": "conj",
+        "misc": "start_char=36|end_char=40"
+      }
+    },
+    "intent": "positive_answer",
+    "semantic_slot": "order_detail",
+    "topics": [
+      "I",
+      "order",
+      "heater",
+      "come"
+    ]
+  },
+  {
+    "turn": 4,
+    "agent": "0",
+    "text": "\"Ok I will look at your order here, one moment\"",
+    "tokens": {
+      "ok": {
+        "id": "1",
+        "text": "Ok",
+        "lemma": "ok",
+        "upos": "INTJ",
+        "xpos": "UH",
+        "head": 4,
+        "deprel": "discourse",
+        "misc": "start_char=0|end_char=2"
+      },
+      "I": {
+        "id": "2",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 4,
+        "deprel": "nsubj",
+        "misc": "start_char=3|end_char=4"
+      },
+      "will": {
+        "id": "3",
+        "text": "will",
+        "lemma": "will",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 4,
+        "deprel": "aux",
+        "misc": "start_char=5|end_char=9"
+      },
+      "look": {
+        "id": "4",
+        "text": "look",
+        "lemma": "look",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=10|end_char=14"
+      },
+      "at": {
+        "id": "5",
+        "text": "at",
+        "lemma": "at",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 7,
+        "deprel": "case",
+        "misc": "start_char=15|end_char=17"
+      },
+      "you": {
+        "id": "6",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 7,
+        "deprel": "nmod:poss",
+        "misc": "start_char=18|end_char=22"
+      },
+      "order": {
+        "id": "7",
+        "text": "order",
+        "lemma": "order",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 4,
+        "deprel": "obl",
+        "misc": "start_char=23|end_char=28"
+      },
+      "here": {
+        "id": "8",
+        "text": "here",
+        "lemma": "here",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "PronType=Dem",
+        "head": 4,
+        "deprel": "advmod",
+        "misc": "start_char=29|end_char=33"
+      },
+      ",": {
+        "id": "9",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 4,
+        "deprel": "punct",
+        "misc": "start_char=33|end_char=34"
+      },
+      "one": {
+        "id": "10",
+        "text": "one",
+        "lemma": "one",
+        "upos": "NUM",
+        "xpos": "CD",
+        "feats": "NumType=Card",
+        "head": 11,
+        "deprel": "nummod",
+        "misc": "start_char=35|end_char=38"
+      },
+      "moment": {
+        "id": "11",
+        "text": "moment",
+        "lemma": "moment",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 4,
+        "deprel": "parataxis",
+        "misc": "start_char=39|end_char=45"
+      }
+    },
+    "intent": "nonresponsive_statement",
+    "semantic_slot": "order_detail",
+    "topics": [
+      "I",
+      "look",
+      "order",
+      "moment"
+    ]
+  },
+  {
+    "turn": 5,
+    "agent": "1",
+    "text": "Take your time",
+    "tokens": {
+      "take": {
+        "id": "1",
+        "text": "Take",
+        "lemma": "take",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "Mood=Imp|VerbForm=Fin",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=4"
+      },
+      "you": {
+        "id": "2",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 3,
+        "deprel": "nmod:poss",
+        "misc": "start_char=5|end_char=9"
+      },
+      "time": {
+        "id": "3",
+        "text": "time",
+        "lemma": "time",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "obj",
+        "misc": "start_char=10|end_char=14"
+      }
+    },
+    "intent": "hold",
+    "semantic_slot": "others",
+    "topics": [
+      "take",
+      "time"
+    ]
+  },
+  {
+    "turn": 6,
+    "agent": "0",
+    "text": "\"May I have your name please, first and last?\"",
+    "tokens": {
+      "may": {
+        "id": "1",
+        "text": "May",
+        "lemma": "may",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 3,
+        "deprel": "aux",
+        "misc": "start_char=0|end_char=3"
+      },
+      "I": {
+        "id": "2",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 3,
+        "deprel": "nsubj",
+        "misc": "start_char=4|end_char=5"
+      },
+      "have": {
+        "id": "3",
+        "text": "have",
+        "lemma": "have",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=6|end_char=10"
+      },
+      "you": {
+        "id": "4",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 5,
+        "deprel": "nmod:poss",
+        "misc": "start_char=11|end_char=15"
+      },
+      "name": {
+        "id": "5",
+        "text": "name",
+        "lemma": "name",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 3,
+        "deprel": "obj",
+        "misc": "start_char=16|end_char=20"
+      },
+      "please": {
+        "id": "6",
+        "text": "please",
+        "lemma": "please",
+        "upos": "INTJ",
+        "xpos": "UH",
+        "head": 3,
+        "deprel": "discourse",
+        "misc": "start_char=21|end_char=27"
+      },
+      ",": {
+        "id": "7",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 8,
+        "deprel": "punct",
+        "misc": "start_char=27|end_char=28"
+      },
+      "first": {
+        "id": "8",
+        "text": "first",
+        "lemma": "first",
+        "upos": "ADV",
+        "xpos": "RB",
+        "head": 3,
+        "deprel": "advmod",
+        "misc": "start_char=29|end_char=34"
+      },
+      "and": {
+        "id": "9",
+        "text": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "head": 10,
+        "deprel": "cc",
+        "misc": "start_char=35|end_char=38"
+      },
+      "last": {
+        "id": "10",
+        "text": "last",
+        "lemma": "last",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 8,
+        "deprel": "conj",
+        "misc": "start_char=39|end_char=43"
+      },
+      "?": {
+        "id": "11",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 3,
+        "deprel": "punct",
+        "misc": "start_char=43|end_char=44"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "name",
+    "topics": [
+      "I",
+      "name"
+    ]
+  },
+  {
+    "turn": 7,
+    "agent": "1",
+    "text": "NAMESLOTU",
+    "tokens": {
+      "nameslotu": {
+        "id": "1",
+        "text": "NAMESLOTU",
+        "lemma": "nameslotu",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=9"
+      }
+    },
+    "intent": "provide",
+    "semantic_slot": "name",
+    "topics": []
+  },
+  {
+    "turn": 8,
+    "agent": "0",
+    "text": "And your address please?",
+    "tokens": {
+      "and": {
+        "id": "1",
+        "text": "And",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "head": 3,
+        "deprel": "cc",
+        "misc": "start_char=0|end_char=3"
+      },
+      "you": {
+        "id": "2",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 3,
+        "deprel": "nmod:poss",
+        "misc": "start_char=4|end_char=8"
+      },
+      "address": {
+        "id": "3",
+        "text": "address",
+        "lemma": "address",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=9|end_char=16"
+      },
+      "please": {
+        "id": "4",
+        "text": "please",
+        "lemma": "please",
+        "upos": "INTJ",
+        "xpos": "UH",
+        "head": 3,
+        "deprel": "discourse",
+        "misc": "start_char=17|end_char=23"
+      },
+      "?": {
+        "id": "5",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 3,
+        "deprel": "punct",
+        "misc": "start_char=23|end_char=24"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "address",
+    "topics": [
+      "address"
+    ]
+  },
+  {
+    "turn": 9,
+    "agent": "1",
+    "text": "ADDRSLOT",
+    "tokens": {
+      "addrslot": {
+        "id": "1",
+        "text": "ADDRSLOT",
+        "lemma": "addrslot",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=8"
+      }
+    },
+    "intent": "provide",
+    "semantic_slot": "address",
+    "topics": []
+  },
+  {
+    "turn": 10,
+    "agent": "0",
+    "text": "Awesome and your order was what exactly?",
+    "tokens": {
+      "awesome": {
+        "id": "1",
+        "text": "Awesome",
+        "lemma": "awesome",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=7"
+      },
+      "and": {
+        "id": "2",
+        "text": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "head": 6,
+        "deprel": "cc",
+        "misc": "start_char=8|end_char=11"
+      },
+      "you": {
+        "id": "3",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 4,
+        "deprel": "nmod:poss",
+        "misc": "start_char=12|end_char=16"
+      },
+      "order": {
+        "id": "4",
+        "text": "order",
+        "lemma": "order",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 6,
+        "deprel": "nsubj",
+        "misc": "start_char=17|end_char=22"
+      },
+      "be": {
+        "id": "5",
+        "text": "was",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBD",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin",
+        "head": 6,
+        "deprel": "cop",
+        "misc": "start_char=23|end_char=26"
+      },
+      "what": {
+        "id": "6",
+        "text": "what",
+        "lemma": "what",
+        "upos": "PRON",
+        "xpos": "WP",
+        "feats": "PronType=Int",
+        "head": 1,
+        "deprel": "conj",
+        "misc": "start_char=27|end_char=31"
+      },
+      "exactly": {
+        "id": "7",
+        "text": "exactly",
+        "lemma": "exactly",
+        "upos": "ADV",
+        "xpos": "RB",
+        "head": 6,
+        "deprel": "advmod",
+        "misc": "start_char=32|end_char=39"
+      },
+      "?": {
+        "id": "8",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=39|end_char=40"
+      }
+    },
+    "intent": "open_question",
+    "semantic_slot": "order_detail",
+    "topics": [
+      "order"
+    ]
+  },
+  {
+    "turn": 11,
+    "agent": "1",
+    "text": "a heater",
+    "tokens": {
+      "a": {
+        "id": "1",
+        "text": "a",
+        "lemma": "a",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Definite=Ind|PronType=Art",
+        "head": 2,
+        "deprel": "det",
+        "misc": "start_char=0|end_char=1"
+      },
+      "heater": {
+        "id": "2",
+        "text": "heater",
+        "lemma": "heater",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=2|end_char=8"
+      }
+    },
+    "intent": "responsive_statement",
+    "semantic_slot": "order_detail",
+    "topics": [
+      "heater"
+    ]
+  },
+  {
+    "turn": 12,
+    "agent": "0",
+    "text": "It says here on your account that your credit card was declined",
+    "tokens": {
+      "it": {
+        "id": "1",
+        "text": "It",
+        "lemma": "it",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Gender=Neut|Number=Sing|Person=3|PronType=Prs",
+        "head": 2,
+        "deprel": "nsubj",
+        "misc": "start_char=0|end_char=2"
+      },
+      "say": {
+        "id": "2",
+        "text": "says",
+        "lemma": "say",
+        "upos": "VERB",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=3|end_char=7"
+      },
+      "here": {
+        "id": "3",
+        "text": "here",
+        "lemma": "here",
+        "upos": "ADV",
+        "xpos": "RB",
+        "feats": "PronType=Dem",
+        "head": 2,
+        "deprel": "advmod",
+        "misc": "start_char=8|end_char=12"
+      },
+      "on": {
+        "id": "4",
+        "text": "on",
+        "lemma": "on",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 6,
+        "deprel": "case",
+        "misc": "start_char=13|end_char=15"
+      },
+      "you": {
+        "id": "8",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 10,
+        "deprel": "nmod:poss",
+        "misc": "start_char=34|end_char=38"
+      },
+      "account": {
+        "id": "6",
+        "text": "account",
+        "lemma": "account",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 2,
+        "deprel": "obl",
+        "misc": "start_char=21|end_char=28"
+      },
+      "that": {
+        "id": "7",
+        "text": "that",
+        "lemma": "that",
+        "upos": "SCONJ",
+        "xpos": "IN",
+        "head": 12,
+        "deprel": "mark",
+        "misc": "start_char=29|end_char=33"
+      },
+      "credit": {
+        "id": "9",
+        "text": "credit",
+        "lemma": "credit",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 10,
+        "deprel": "compound",
+        "misc": "start_char=39|end_char=45"
+      },
+      "card": {
+        "id": "10",
+        "text": "card",
+        "lemma": "card",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 12,
+        "deprel": "nsubj:pass",
+        "misc": "start_char=46|end_char=50"
+      },
+      "be": {
+        "id": "11",
+        "text": "was",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBD",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin",
+        "head": 12,
+        "deprel": "aux:pass",
+        "misc": "start_char=51|end_char=54"
+      },
+      "decline": {
+        "id": "12",
+        "text": "declined",
+        "lemma": "decline",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+        "head": 2,
+        "deprel": "ccomp",
+        "misc": "start_char=55|end_char=63"
+      }
+    },
+    "intent": "nonresponsive_statement",
+    "semantic_slot": "card_info",
+    "topics": [
+      "it",
+      "account",
+      "credit",
+      "card",
+      "decline"
+    ]
+  },
+  {
+    "turn": 13,
+    "agent": "1",
+    "text": "How can I fix that",
+    "tokens": {
+      "how": {
+        "id": "1",
+        "text": "How",
+        "lemma": "how",
+        "upos": "ADV",
+        "xpos": "WRB",
+        "feats": "PronType=Int",
+        "head": 4,
+        "deprel": "advmod",
+        "misc": "start_char=0|end_char=3"
+      },
+      "can": {
+        "id": "2",
+        "text": "can",
+        "lemma": "can",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 4,
+        "deprel": "aux",
+        "misc": "start_char=4|end_char=7"
+      },
+      "I": {
+        "id": "3",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 4,
+        "deprel": "nsubj",
+        "misc": "start_char=8|end_char=9"
+      },
+      "fix": {
+        "id": "4",
+        "text": "fix",
+        "lemma": "fix",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=10|end_char=13"
+      },
+      "that": {
+        "id": "5",
+        "text": "that",
+        "lemma": "that",
+        "upos": "PRON",
+        "xpos": "DT",
+        "feats": "Number=Sing|PronType=Dem",
+        "head": 4,
+        "deprel": "obj",
+        "misc": "start_char=14|end_char=18"
+      }
+    },
+    "intent": "open_question",
+    "semantic_slot": "card_info",
+    "topics": [
+      "I",
+      "fix"
+    ]
+  },
+  {
+    "turn": 14,
+    "agent": "0",
+    "text": "What is your credit card number?",
+    "tokens": {
+      "what": {
+        "id": "1",
+        "text": "What",
+        "lemma": "what",
+        "upos": "PRON",
+        "xpos": "WP",
+        "feats": "PronType=Int",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=4"
+      },
+      "be": {
+        "id": "2",
+        "text": "is",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 1,
+        "deprel": "cop",
+        "misc": "start_char=5|end_char=7"
+      },
+      "you": {
+        "id": "3",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 6,
+        "deprel": "nmod:poss",
+        "misc": "start_char=8|end_char=12"
+      },
+      "credit": {
+        "id": "4",
+        "text": "credit",
+        "lemma": "credit",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "compound",
+        "misc": "start_char=13|end_char=19"
+      },
+      "card": {
+        "id": "5",
+        "text": "card",
+        "lemma": "card",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 6,
+        "deprel": "compound",
+        "misc": "start_char=20|end_char=24"
+      },
+      "number": {
+        "id": "6",
+        "text": "number",
+        "lemma": "number",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "nsubj",
+        "misc": "start_char=25|end_char=31"
+      },
+      "?": {
+        "id": "7",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=31|end_char=32"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "card_num",
+    "topics": [
+      "credit",
+      "card",
+      "number"
+    ]
+  },
+  {
+    "turn": 15,
+    "agent": "1",
+    "text": "\"What is your name, I would like to report this good support to your superior\"",
+    "tokens": {
+      "what": {
+        "id": "1",
+        "text": "What",
+        "lemma": "what",
+        "upos": "PRON",
+        "xpos": "WP",
+        "feats": "PronType=Int",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=4"
+      },
+      "be": {
+        "id": "2",
+        "text": "is",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 1,
+        "deprel": "cop",
+        "misc": "start_char=5|end_char=7"
+      },
+      "you": {
+        "id": "15",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 16,
+        "deprel": "nmod:poss",
+        "misc": "start_char=63|end_char=67"
+      },
+      "name": {
+        "id": "4",
+        "text": "name",
+        "lemma": "name",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "nsubj",
+        "misc": "start_char=13|end_char=17"
+      },
+      ",": {
+        "id": "5",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=17|end_char=18"
+      },
+      "I": {
+        "id": "6",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 8,
+        "deprel": "nsubj",
+        "misc": "start_char=19|end_char=20"
+      },
+      "would": {
+        "id": "7",
+        "text": "would",
+        "lemma": "would",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 8,
+        "deprel": "aux",
+        "misc": "start_char=21|end_char=26"
+      },
+      "like": {
+        "id": "8",
+        "text": "like",
+        "lemma": "like",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 1,
+        "deprel": "parataxis",
+        "misc": "start_char=27|end_char=31"
+      },
+      "to": {
+        "id": "14",
+        "text": "to",
+        "lemma": "to",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 16,
+        "deprel": "case",
+        "misc": "start_char=60|end_char=62"
+      },
+      "report": {
+        "id": "10",
+        "text": "report",
+        "lemma": "report",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 8,
+        "deprel": "xcomp",
+        "misc": "start_char=35|end_char=41"
+      },
+      "this": {
+        "id": "11",
+        "text": "this",
+        "lemma": "this",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Number=Sing|PronType=Dem",
+        "head": 13,
+        "deprel": "det",
+        "misc": "start_char=42|end_char=46"
+      },
+      "good": {
+        "id": "12",
+        "text": "good",
+        "lemma": "good",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 13,
+        "deprel": "amod",
+        "misc": "start_char=47|end_char=51"
+      },
+      "support": {
+        "id": "13",
+        "text": "support",
+        "lemma": "support",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 10,
+        "deprel": "obj",
+        "misc": "start_char=52|end_char=59"
+      },
+      "superior": {
+        "id": "16",
+        "text": "superior",
+        "lemma": "superior",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 10,
+        "deprel": "obl",
+        "misc": "start_char=68|end_char=76"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "name",
+    "topics": [
+      "name",
+      "I",
+      "like",
+      "report",
+      "support"
+    ]
+  },
+  {
+    "turn": 16,
+    "agent": "0",
+    "text": "My name is NAMESLOTA and I'm with Amazon Customer Support",
+    "tokens": {
+      "my": {
+        "id": "1",
+        "text": "My",
+        "lemma": "my",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Number=Sing|Person=1|Poss=Yes|PronType=Prs",
+        "head": 2,
+        "deprel": "nmod:poss",
+        "misc": "start_char=0|end_char=2"
+      },
+      "name": {
+        "id": "2",
+        "text": "name",
+        "lemma": "name",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 4,
+        "deprel": "nsubj",
+        "misc": "start_char=3|end_char=7"
+      },
+      "be": {
+        "id": "7",
+        "text": "'m",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBP",
+        "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+        "head": 11,
+        "deprel": "cop",
+        "misc": "start_char=26|end_char=28"
+      },
+      "nameslota": {
+        "id": "4",
+        "text": "NAMESLOTA",
+        "lemma": "nameslota",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=11|end_char=20"
+      },
+      "and": {
+        "id": "5",
+        "text": "and",
+        "lemma": "and",
+        "upos": "CCONJ",
+        "xpos": "CC",
+        "head": 11,
+        "deprel": "cc",
+        "misc": "start_char=21|end_char=24"
+      },
+      "I": {
+        "id": "6",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 11,
+        "deprel": "nsubj",
+        "misc": "start_char=25|end_char=26"
+      },
+      "with": {
+        "id": "8",
+        "text": "with",
+        "lemma": "with",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 11,
+        "deprel": "case",
+        "misc": "start_char=29|end_char=33"
+      },
+      "Amazon": {
+        "id": "9",
+        "text": "Amazon",
+        "lemma": "Amazon",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 11,
+        "deprel": "compound",
+        "misc": "start_char=34|end_char=40"
+      },
+      "customer": {
+        "id": "10",
+        "text": "Customer",
+        "lemma": "customer",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 11,
+        "deprel": "compound",
+        "misc": "start_char=41|end_char=49"
+      },
+      "support": {
+        "id": "11",
+        "text": "Support",
+        "lemma": "support",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 4,
+        "deprel": "conj",
+        "misc": "start_char=50|end_char=57"
+      }
+    },
+    "intent": "provide",
+    "semantic_slot": "name",
+    "topics": [
+      "name",
+      "be",
+      "I",
+      "Amazon",
+      "customer",
+      "support"
+    ]
+  },
+  {
+    "turn": 17,
+    "agent": "1",
+    "text": "\"Thank you, where would I go to notify your superior of this amazing support?\"",
+    "tokens": {
+      "thank": {
+        "id": "1",
+        "text": "Thank",
+        "lemma": "thank",
+        "upos": "VERB",
+        "xpos": "VBP",
+        "feats": "Mood=Ind|Tense=Pres|VerbForm=Fin",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=5"
+      },
+      "you": {
+        "id": "10",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 11,
+        "deprel": "nmod:poss",
+        "misc": "start_char=38|end_char=42"
+      },
+      ",": {
+        "id": "3",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=9|end_char=10"
+      },
+      "where": {
+        "id": "4",
+        "text": "where",
+        "lemma": "where",
+        "upos": "ADV",
+        "xpos": "WRB",
+        "feats": "PronType=Int",
+        "head": 7,
+        "deprel": "advmod",
+        "misc": "start_char=11|end_char=16"
+      },
+      "would": {
+        "id": "5",
+        "text": "would",
+        "lemma": "would",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 7,
+        "deprel": "aux",
+        "misc": "start_char=17|end_char=22"
+      },
+      "I": {
+        "id": "6",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 7,
+        "deprel": "nsubj",
+        "misc": "start_char=23|end_char=24"
+      },
+      "go": {
+        "id": "7",
+        "text": "go",
+        "lemma": "go",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 1,
+        "deprel": "parataxis",
+        "misc": "start_char=25|end_char=27"
+      },
+      "to": {
+        "id": "8",
+        "text": "to",
+        "lemma": "to",
+        "upos": "PART",
+        "xpos": "TO",
+        "head": 9,
+        "deprel": "mark",
+        "misc": "start_char=28|end_char=30"
+      },
+      "notify": {
+        "id": "9",
+        "text": "notify",
+        "lemma": "notify",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 7,
+        "deprel": "advcl",
+        "misc": "start_char=31|end_char=37"
+      },
+      "superior": {
+        "id": "11",
+        "text": "superior",
+        "lemma": "superior",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 9,
+        "deprel": "obj",
+        "misc": "start_char=43|end_char=51"
+      },
+      "of": {
+        "id": "12",
+        "text": "of",
+        "lemma": "of",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 15,
+        "deprel": "case",
+        "misc": "start_char=52|end_char=54"
+      },
+      "this": {
+        "id": "13",
+        "text": "this",
+        "lemma": "this",
+        "upos": "DET",
+        "xpos": "DT",
+        "feats": "Number=Sing|PronType=Dem",
+        "head": 15,
+        "deprel": "det",
+        "misc": "start_char=55|end_char=59"
+      },
+      "amazing": {
+        "id": "14",
+        "text": "amazing",
+        "lemma": "amazing",
+        "upos": "ADJ",
+        "xpos": "JJ",
+        "feats": "Degree=Pos",
+        "head": 15,
+        "deprel": "amod",
+        "misc": "start_char=60|end_char=67"
+      },
+      "support": {
+        "id": "15",
+        "text": "support",
+        "lemma": "support",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 11,
+        "deprel": "obl",
+        "misc": "start_char=68|end_char=75"
+      },
+      "?": {
+        "id": "16",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=75|end_char=76"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "phone_num",
+    "topics": [
+      "thank",
+      "I",
+      "go",
+      "notify",
+      "support"
+    ]
+  },
+  {
+    "turn": 18,
+    "agent": "0",
+    "text": "\"My manager can be contacted at PHONESLOT, her name is Ashley\"",
+    "tokens": {
+      "my": {
+        "id": "1",
+        "text": "My",
+        "lemma": "my",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Number=Sing|Person=1|Poss=Yes|PronType=Prs",
+        "head": 2,
+        "deprel": "nmod:poss",
+        "misc": "start_char=0|end_char=2"
+      },
+      "manager": {
+        "id": "2",
+        "text": "manager",
+        "lemma": "manager",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "nsubj:pass",
+        "misc": "start_char=3|end_char=10"
+      },
+      "can": {
+        "id": "3",
+        "text": "can",
+        "lemma": "can",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 5,
+        "deprel": "aux",
+        "misc": "start_char=11|end_char=14"
+      },
+      "be": {
+        "id": "11",
+        "text": "is",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 12,
+        "deprel": "cop",
+        "misc": "start_char=51|end_char=53"
+      },
+      "contact": {
+        "id": "5",
+        "text": "contacted",
+        "lemma": "contact",
+        "upos": "VERB",
+        "xpos": "VBN",
+        "feats": "Tense=Past|VerbForm=Part|Voice=Pass",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=18|end_char=27"
+      },
+      "at": {
+        "id": "6",
+        "text": "at",
+        "lemma": "at",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 7,
+        "deprel": "case",
+        "misc": "start_char=28|end_char=30"
+      },
+      "phoneslot": {
+        "id": "7",
+        "text": "PHONESLOT",
+        "lemma": "phoneslot",
+        "upos": "ADV",
+        "xpos": "RB",
+        "head": 5,
+        "deprel": "obl",
+        "misc": "start_char=31|end_char=40"
+      },
+      ",": {
+        "id": "8",
+        "text": ",",
+        "lemma": ",",
+        "upos": "PUNCT",
+        "xpos": ",",
+        "head": 5,
+        "deprel": "punct",
+        "misc": "start_char=40|end_char=41"
+      },
+      "she": {
+        "id": "9",
+        "text": "her",
+        "lemma": "she",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Gender=Fem|Number=Sing|Person=3|Poss=Yes|PronType=Prs",
+        "head": 10,
+        "deprel": "nmod:poss",
+        "misc": "start_char=42|end_char=45"
+      },
+      "name": {
+        "id": "10",
+        "text": "name",
+        "lemma": "name",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 12,
+        "deprel": "nsubj",
+        "misc": "start_char=46|end_char=50"
+      },
+      "Ashley": {
+        "id": "12",
+        "text": "Ashley",
+        "lemma": "Ashley",
+        "upos": "PROPN",
+        "xpos": "NNP",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "parataxis",
+        "misc": "start_char=54|end_char=60"
+      }
+    },
+    "intent": "provide",
+    "semantic_slot": "phone_num",
+    "topics": [
+      "manager",
+      "contact",
+      "name",
+      "Ashley"
+    ]
+  },
+  {
+    "turn": 19,
+    "agent": "1",
+    "text": "What is your phone number?",
+    "tokens": {
+      "what": {
+        "id": "1",
+        "text": "What",
+        "lemma": "what",
+        "upos": "PRON",
+        "xpos": "WP",
+        "feats": "PronType=Int",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=0|end_char=4"
+      },
+      "be": {
+        "id": "2",
+        "text": "is",
+        "lemma": "be",
+        "upos": "AUX",
+        "xpos": "VBZ",
+        "feats": "Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin",
+        "head": 1,
+        "deprel": "cop",
+        "misc": "start_char=5|end_char=7"
+      },
+      "you": {
+        "id": "3",
+        "text": "your",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP$",
+        "feats": "Person=2|Poss=Yes|PronType=Prs",
+        "head": 5,
+        "deprel": "nmod:poss",
+        "misc": "start_char=8|end_char=12"
+      },
+      "phone": {
+        "id": "4",
+        "text": "phone",
+        "lemma": "phone",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 5,
+        "deprel": "compound",
+        "misc": "start_char=13|end_char=18"
+      },
+      "number": {
+        "id": "5",
+        "text": "number",
+        "lemma": "number",
+        "upos": "NOUN",
+        "xpos": "NN",
+        "feats": "Number=Sing",
+        "head": 1,
+        "deprel": "nsubj",
+        "misc": "start_char=19|end_char=25"
+      },
+      "?": {
+        "id": "6",
+        "text": "?",
+        "lemma": "?",
+        "upos": "PUNCT",
+        "xpos": ".",
+        "head": 1,
+        "deprel": "punct",
+        "misc": "start_char=25|end_char=26"
+      }
+    },
+    "intent": "elicitation",
+    "semantic_slot": "phone_num",
+    "topics": [
+      "phone",
+      "number"
+    ]
+  },
+  {
+    "turn": 20,
+    "agent": "1",
+    "text": "I would love to talk to you",
+    "tokens": {
+      "I": {
+        "id": "1",
+        "text": "I",
+        "lemma": "I",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Nom|Number=Sing|Person=1|PronType=Prs",
+        "head": 3,
+        "deprel": "nsubj",
+        "misc": "start_char=0|end_char=1"
+      },
+      "would": {
+        "id": "2",
+        "text": "would",
+        "lemma": "would",
+        "upos": "AUX",
+        "xpos": "MD",
+        "feats": "VerbForm=Fin",
+        "head": 3,
+        "deprel": "aux",
+        "misc": "start_char=2|end_char=7"
+      },
+      "love": {
+        "id": "3",
+        "text": "love",
+        "lemma": "love",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 0,
+        "deprel": "root",
+        "misc": "start_char=8|end_char=12"
+      },
+      "to": {
+        "id": "6",
+        "text": "to",
+        "lemma": "to",
+        "upos": "ADP",
+        "xpos": "IN",
+        "head": 7,
+        "deprel": "case",
+        "misc": "start_char=21|end_char=23"
+      },
+      "talk": {
+        "id": "5",
+        "text": "talk",
+        "lemma": "talk",
+        "upos": "VERB",
+        "xpos": "VB",
+        "feats": "VerbForm=Inf",
+        "head": 3,
+        "deprel": "xcomp",
+        "misc": "start_char=16|end_char=20"
+      },
+      "you": {
+        "id": "7",
+        "text": "you",
+        "lemma": "you",
+        "upos": "PRON",
+        "xpos": "PRP",
+        "feats": "Case=Acc|Person=2|PronType=Prs",
+        "head": 5,
+        "deprel": "obl",
+        "misc": "start_char=24|end_char=27"
+      }
+    },
+    "intent": "nonresponsive_statement",
+    "semantic_slot": "others",
+    "topics": [
+      "I",
+      "love",
+      "talk"
+    ]
+  }
+]
