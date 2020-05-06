@@ -16,6 +16,5 @@ year={2019},
 eprint={1911.10742},
 archivePrefix={arXiv},
 primaryClass={cs.CL}
-}  
-
+}
 ```
