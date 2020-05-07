@@ -67,7 +67,7 @@ def write_enhanced_files(dialogs: list, directory: str = ENHANCED_DIALOGS, _ppri
 
 
 def write_raw_files(dialogs: list, directory: str = RAW_DIALOGS, _pprint: bool = False):
-    print(f"\n=== WRITING ENHANCED DATA FILES ===\n")
+    print(f"\n=== WRITING RAW DATA FILES ===\n")
     for dialog in dialogs:
         filename = str(uuid.uuid4())[:8]
         print(f"writing to -> {filename}.json")
