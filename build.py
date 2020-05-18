@@ -7,13 +7,7 @@ import uuid
 import os
 
 from omicron.nlp import get_tokens
-
-
-ROOT_DIR = Path(f"{os.path.abspath(__file__)}").parent
-ANTISCAM_SRC_PATH = f"{ROOT_DIR}/data/src/AntiScam_annotated.txt"
-PERSUASION_SRC_PATH = f"{ROOT_DIR}/data/src/AntiScam_annotated.txt"
-RAW_DIALOGS = f"{ROOT_DIR}/data/dialogs/raw"
-ENHANCED_DIALOGS = f"{ROOT_DIR}/data/dialogs/enhanced"
+from omicron.constants import *
 
 stanza_nlp = stanza.Pipeline('en')
 
@@ -61,6 +55,14 @@ def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool =
 
 
 def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bool = False):
+    with open(input_file_dir, 'r', encoding="ISO-8859-1") as input_file:
+        dialog_index = 0
+        temp_dialog = []
+        raw_dialogs = []
+        dialogs = []
+        for line in input_file:
+            line = line.strip()
+            print(line)
     pass
 
 
@@ -92,4 +94,4 @@ def topics(turn: list):
 
 
 if __name__ == '__main__':
-    build_antiscam_data()
+    build_persuasion_data()
