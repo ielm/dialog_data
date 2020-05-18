@@ -7,7 +7,6 @@ import csv
 import uuid
 import os
 
-
 from omicron.nlp import get_tokens, get_topics
 
 ROOT_DIR = Path(f"{os.path.abspath(__file__)}").parent
@@ -25,7 +24,7 @@ PERSUASION_ENHANCED_DIALOGS = f"{DIALOG_DATA_DIR}/persuasion/enhanced"
 
 def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool = False):
     header = ['turn', 'agent', 'text', 'tokens', 'intent', 'semantic_slot', 'topics']
-    
+
     def _process_dialog(_data: list):
 
         def _process_row(_index, _row):
@@ -57,19 +56,21 @@ def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool =
                     print(f"CONV{dialog_index}")
                     dialog_index += 1
                     raw_dialogs.append(temp_dialog)
-                    processed_dialog = _process_dialog(temp_dialog) 
+                    processed_dialog = _process_dialog(temp_dialog)
                     dialogs.append(processed_dialog)
                     temp_dialog = []
             temp_dialog.append(line)
-    # write_raw_files(raw_dialogs)   # UNCOMMENT THESE TO WRITE FILES
-    # write_enhanced_files(dialogs)  # UNCOMMENT THESE TO WRITE FILES
+
+    # -- UNCOMMENT THESE TO WRITE FILES -- #
+    # write_raw_files(raw_dialogs)
+    # write_enhanced_files(dialogs)
 
 
 def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bool = False):
     # header = ['index', 'text', 'turn', 'role', 'dialog_id']
-    header = ['index', 'text', 'tokens', 'topics', 'turn', 'role', 'dialog_id']
 
     def _process_dialog(_data: tuple):
+        header = ['index', 'text', 'tokens', 'topics', 'turn', 'role', 'dialog_id']
 
         def _process_turn(_turn):
             print(".")
@@ -78,14 +79,21 @@ def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bo
             return _turn
 
         print(f"\n\nProcessing Dialog: {_data[0]}")
-        
+
         _dialog = []
         for _turn in _data[1]:
             _row = _process_turn(_turn)
             _dialog.append(OrderedDict(zip(header, _row)))
         return _dialog
 
-    raw_dialogs = []
+    def _process_raw_dialog(_data: tuple):
+        raw_header = ['index', 'text', 'turn', 'role', 'dialog_id']
+        _dialog = []
+        for _turn in _data[1]:
+            _dialog.append(OrderedDict(zip(raw_header, _turn)))
+        return _dialog
+
+    raw_dialogs = OrderedDict()
     dialogs = OrderedDict()
     dialog_ids = []
     with open(input_file_dir, 'r', encoding="ISO-8859-1") as input_file:
@@ -99,17 +107,20 @@ def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bo
                     else:
                         dialog_ids.append(r[4])
                         dialogs[r[4]] = [r]
-        for dialog in enumerate(dialogs.items()):
-            raw_dialogs.append(dialog)
-            dialogs[dialog[0]] = _process_dialog(dialog)
+        for dialog in dialogs.items():
+            # raw_dialogs.append(dialog[1])
+            raw_dialogs[dialog[0]] = _process_raw_dialog(dialog)
+        # dialogs[dialog[0]] = _process_dialog(dialog)
 
-        # pprint(dialogs)
-    write_raw_files(dialogs=raw_dialogs,
-                        directory=PERSUASION_RAW_DIALOGS,
-                        verbose=True)       # UNCOMMENT THESE TO WRITE FILES
-    write_enhanced_files(dialogs=[d[1] for d in dialogs.items()],
-                             directory=PERSUASION_ENHANCED_DIALOGS,
-                             verbose=True)  # UNCOMMENT THESE TO WRITE FILES
+        pprint(raw_dialogs)
+
+    # -- UNCOMMENT THESE TO WRITE FILES -- #
+    # write_raw_persuasion_files(dialogs=[d[1] for d in raw_dialogs.items()],
+    #                            directory=PERSUASION_RAW_DIALOGS,
+    #                            verbose=True)
+    # write_enhanced_files(dialogs=[d[1] for d in dialogs.items()],
+    #                          directory=PERSUASION_ENHANCED_DIALOGS,
+    #                          verbose=True)
 
 
 def write_enhanced_files(dialogs: list, directory: str = ANTISCAM_ENHANCED_DIALOGS, verbose: bool = False):
@@ -121,14 +132,23 @@ def write_enhanced_files(dialogs: list, directory: str = ANTISCAM_ENHANCED_DIALO
             json.dump(dialog, json_file, indent=2)
 
 
-def write_raw_files(dialogs: list, directory: str = ANTISCAM_RAW_DIALOGS, verbose: bool = False):
-    print(f"\n=== WRITING RAW DATA FILES ===\n")
+def write_raw_antiscam_files(dialogs: list, directory: str = ANTISCAM_RAW_DIALOGS, verbose: bool = False):
+    print(f"\n=== WRITING RAW ANTISCAM DATA FILES ===\n")
     for dialog in dialogs:
         filename = str(uuid.uuid4())[:8]
         print(f"writing to -> {filename}.json")
         with open(f"{directory}/{filename}.txt", 'w') as file:
             for _r in dialog:
                 file.write(f"{_r}\n\n")
+
+
+def write_raw_persuasion_files(dialogs: list, directory: str = ANTISCAM_RAW_DIALOGS, verbose: bool = False):
+    print(f"\n=== WRITING RAW PERSUASION DATA FILES ===\n")
+    for dialog in dialogs:
+        filename = str(uuid.uuid4())[:8]
+        print(f"writing to -> {filename}.json")
+        with open(f"{directory}/{filename}.json", 'w') as json_file:
+            json.dump(dialog, json_file, indent=2)
 
 
 if __name__ == '__main__':
