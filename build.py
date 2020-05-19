@@ -5,7 +5,7 @@ import csv
 import uuid
 import os
 
-from omicron.nlp import get_tokens, get_topics
+from omicron.utils.nlp import get_tokens, get_topics
 
 ROOT_DIR = Path(f"{os.path.abspath(__file__)}").parent
 
