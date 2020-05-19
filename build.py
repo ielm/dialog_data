@@ -27,7 +27,8 @@ def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool =
     def _process_dialog(_data: list):
 
         def _process_row(_index, _row):
-            print(".")
+            if verbose:
+                print(".")
             _row = [el.strip() for el in _row.split('\t') if el != '']
             _row.insert(0, _index)
             _row.insert(3, get_tokens(_row[2], False))
@@ -52,7 +53,8 @@ def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool =
             line = line.strip()
             if not line:
                 if temp_dialog:
-                    print(f"CONV{dialog_index}")
+                    if verbose:
+                        print(f"CONV{dialog_index}")
                     dialog_index += 1
                     raw_dialogs.append(temp_dialog)
                     processed_dialog = _process_dialog(temp_dialog)
@@ -64,11 +66,11 @@ def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool =
     # print(f"\n=== WRITING RAW DATA FILES ===\n")
     # write_txt_files(dialogs=raw_dialogs,
     #                 directory=ANTISCAM_RAW_DIALOGS,
-    #                 verbose=True)
+    #                 verbose=verbose)
     # print(f"\n=== WRITING ENHANCED DATA FILES ===\n")
     # write_json_files(dialogs=dialogs,
     #                  directory=ANTISCAM_ENHANCED_DIALOGS,
-    #                  verbose=True)
+    #                  verbose=verbose)
 
 
 def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bool = False):
