@@ -23,7 +23,8 @@ PERSUASION_ENHANCED_DIALOGS = f"{DIALOG_DATA_DIR}/persuasion/enhanced"
 
 
 def build_antiscam_data(input_file_dir: str = ANTISCAM_SRC_PATH, verbose: bool = False):
-    header = ['turn', 'agent', 'text', 'tokens', 'intent', 'semantic_slot', 'topics']
+    header = ['turn', 'agent', 'text', 'tokens',
+              'intent', 'semantic_slot', 'topics']
 
     def _process_dialog(_data: list):
 
@@ -70,7 +71,8 @@ def build_persuasion_data(input_file_dir: str = PERSUASION_SRC_PATH, verbose: bo
     # header = ['index', 'text', 'turn', 'role', 'dialog_id']
 
     def _process_dialog(_data: tuple):
-        header = ['index', 'text', 'tokens', 'topics', 'turn', 'role', 'dialog_id']
+        header = ['index', 'text', 'tokens',
+                  'topics', 'turn', 'role', 'dialog_id']
 
         def _process_turn(_turn):
             print(".")
